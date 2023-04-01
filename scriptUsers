@@ -1,0 +1,110 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema kabulUsers
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema kabulUsers
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `kabulUsers` ;
+USE `kabulUsers` ;
+
+-- -----------------------------------------------------
+-- Table `kabulUsers`.`locations`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kabulUsers`.`locations` (
+  `idlocations` INT NOT NULL AUTO_INCREMENT,
+  `country` VARCHAR(45) NOT NULL,
+  `state` VARCHAR(45) NOT NULL,
+  `city` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idlocations`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kabulUsers`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kabulUsers`.`users` (
+  `idusers` INT NOT NULL AUTO_INCREMENT,
+  `userName` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `zipCode` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `locations_idlocations` INT NOT NULL,
+  PRIMARY KEY (`idusers`),
+  INDEX `fk_users_locations_idx` (`locations_idlocations` ASC) VISIBLE,
+  CONSTRAINT `fk_users_locations`
+    FOREIGN KEY (`locations_idlocations`)
+    REFERENCES `kabulUsers`.`locations` (`idlocations`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kabulUsers`.`employees`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kabulUsers`.`employees` (
+  `idemployees` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `surName` VARCHAR(45) NOT NULL,
+  `idAptitude` INT NOT NULL,
+  `users_idusers` INT NOT NULL,
+  PRIMARY KEY (`idemployees`),
+  INDEX `fk_employees_users1_idx` (`users_idusers` ASC) VISIBLE,
+  CONSTRAINT `fk_employees_users1`
+    FOREIGN KEY (`users_idusers`)
+    REFERENCES `kabulUsers`.`users` (`idusers`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kabulUsers`.`employers`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kabulUsers`.`employers` (
+  `idemployers` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `users_idusers` INT NOT NULL,
+  PRIMARY KEY (`idemployers`),
+  INDEX `fk_employers_users1_idx` (`users_idusers` ASC) VISIBLE,
+  CONSTRAINT `fk_employers_users1`
+    FOREIGN KEY (`users_idusers`)
+    REFERENCES `kabulUsers`.`users` (`idusers`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kabulUsers`.`potentialEmployees`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kabulUsers`.`potentialEmployees` (
+  `employers_idemployers` INT NOT NULL,
+  `employees_idemployees` INT NOT NULL,
+  PRIMARY KEY (`employers_idemployers`, `employees_idemployees`),
+  INDEX `fk_employers_has_employees_employees1_idx` (`employees_idemployees` ASC) VISIBLE,
+  INDEX `fk_employers_has_employees_employers1_idx` (`employers_idemployers` ASC) VISIBLE,
+  CONSTRAINT `fk_employers_has_employees_employers1`
+    FOREIGN KEY (`employers_idemployers`)
+    REFERENCES `kabulUsers`.`employers` (`idemployers`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_employers_has_employees_employees1`
+    FOREIGN KEY (`employees_idemployees`)
+    REFERENCES `kabulUsers`.`employees` (`idemployees`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+

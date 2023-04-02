@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Buscar empleados</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Buscar empleados</h1>
+    <h3>Este es un frontend auxiliar, solo para poder interactuar con la api </h3>
+    <h3>Cargamos en la base de datos 500 "posibles empleados" y 100 "aptitudes"</h3>
+    <h3>un formato ejemplo a escribir es (Skill 75,Skill 22)</h3>
+    <h3>Esto es solo para mostrar una idea de la funcion principal de nuestra aplicacion</h3>
+    <h3>usted es una empresa que va a solicitar una lista de las personas mas aptas para cumplir con los requisitos que esta ingresando</h3>
+    <form id="search-form">
+      <label for="skill-names">Nombres de las habilidades:</label>
+      <input type="text" id="skill-names" name="skillNames">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div id="search-results">
+      <!-- Aquí se mostrarán los resultados de la búsqueda -->
+    </div>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const skillNames = document.getElementById("skill-names").value.split(",").map(skillName => skillName.trim());
+      // Construir el objeto de búsqueda a partir de los nombres de las habilidades
+      function buildSearchObject(skillNames) {
+  const searchedSkills = skillNames.map(skillName => {
+    const skillId = parseInt(skillName.match(/\d+/)[0]);
+    return {
+      "idSkill": skillId,
+      "name": skillName
+    };
+  });
+  return { "searchedSkills": searchedSkills };
+}
+
+      // Manejar la búsqueda del usuario
+      const searchForm = document.getElementById("search-form");
+      searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const skillNames = document.getElementById("skill-names").value.split(",");
+
+        const requestData = buildSearchObject(skillNames);
+
+        const url = "http://localhost:8080/employers/search/1"; // Reemplaza "123" con el ID deseado
+
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestData)
+        })
+          .then(response => response.json())
+          .then(data => {
+            // Manejar la respuesta del servidor aquí
+            const resultsContainer = document.getElementById("search-results");
+            resultsContainer.innerHTML = "";
+
+            data.forEach(employee => {
+              const employeeElement = document.createElement("div");
+              employeeElement.textContent = employee.name;
+              resultsContainer.appendChild(employeeElement);
+            });
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      });
+    });
+    </script>
+  </body>
+</html>
+

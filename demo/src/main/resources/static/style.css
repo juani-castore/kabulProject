@@ -1,0 +1,92 @@
+/* Estilos para el body */
+body {
+    font-family: 'Circular Std', sans-serif;
+    background-color: #F0ECEC;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #2C2E43;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  
+  /* Estilos para el formulario */
+  #search-form {
+    margin: 2rem auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  label {
+    margin-right: 1rem;
+    color: #2C2E43;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #2C2E43;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #665191;
+    color: #F0ECEC;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #9172A6;
+  }
+  
+  /* Estilos para el contenedor de resultados */
+  #search-results {
+    margin: 2rem auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7D9C6;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #2C2E43;
+  }
+  
+  /* Estilos para los resultados */
+  #search-results > div {
+    margin: 1rem 0;
+  }
+  
+  /* Teoria del color 60 30 10 */
+  /* Color principal */
+  :root {
+    --primary-color: #665191;
+  }
+  
+  /* Color secundario */
+  :root {
+    --secondary-color: #9172A6;
+  }
+  
+  /* Color acento */
+  :root {
+    --accent-color: #E7D9C6;
+  }

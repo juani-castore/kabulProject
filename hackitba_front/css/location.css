@@ -1,0 +1,292 @@
+body {
+    font-family: "Circular Std";
+    margin: 0;
+    padding: 0;
+  
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+    
+  }
+  
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Bold.woff') format('woff2'),
+         url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: Bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+         url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight:lighter;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Light.woff2') format('woff2'),
+         url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /*Logo*/
+  .logo img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    }
+  
+  header {
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  /*Host a new search*/
+  .titulo {
+    top: 6%;
+    position: absolute;
+    left: 17%;
+    transform: translateX(-50%);
+    font-family: "Circular Std";
+    font-weight: Bold;
+    font-size: 35px;
+    color: white;
+  }
+
+.texto1{
+    top: 25%;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    font-family: "Circular Std";
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+}
+
+.textbox1 {
+  font-family: "Circular Std";
+  font-weight: bold;
+  width: 300px;
+  padding: 10px;
+  box-sizing:content-box;
+  top: 38%;
+  position: absolute;
+  left: 40%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.texto2{
+  top: 44%;
+  position: absolute;
+  left: 56.6%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+}
+
+
+
+.mas{
+  top: 57.5%;
+  position: absolute;
+  left: 91%;
+}
+
+
+.skill1{
+  top: 80%;
+  position: absolute;
+  left: 8%;
+}
+
+
+.skill2{
+  top: 80%;
+  position: absolute;
+  left: 20%;
+}
+
+.continue{
+  top: 85%;
+  position: absolute;
+  left: 85%;
+}
+
+.uno{
+  font-size: 130%;
+  color: white;
+  top: 61.6%;
+  position: absolute;
+  left: 53%;
+}
+.cinco{
+  font-size: 130%;
+  color: white;
+  top: 61.6%;
+  position: absolute;
+  left: 86.5%;
+}
+
+
+.textbox2{
+  font-family: "Circular Std";
+  font-weight: bold;
+  height: 10px;
+  width: 70px;
+  padding: 7px;
+  box-sizing:content-box;
+  top: 56.5%;
+  position: absolute;
+  left: 43%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.textbox3{
+  font-family: "Circular Std";
+  font-weight: bold;
+  height: 10px;
+  width: 70px;
+  padding: 7px;
+  box-sizing:content-box;
+  top: 56.5%;
+  position: absolute;
+  left: 54.5%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.min{
+  font-size: 130%;
+  color: white;
+  top: 56.5%;
+  position: absolute;
+  left: 39.8%;
+}
+
+.max{
+  font-size: 130%;
+  color: white;
+  top: 56.5%;
+  position: absolute;
+  left: 51%;
+}
+
+
+.texto3{
+  top: 59%;
+  position: absolute;
+  left: 62.3%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+}
+
+
+.textbox4{
+  font-family: "Circular Std";
+  font-weight: bold;
+  height: 10px;
+  width: 70px;
+  padding: 7px;
+  box-sizing:content-box;
+  top: 71%;
+  position: absolute;
+  left: 43%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.textbox5{
+  font-family: "Circular Std";
+  font-weight: bold;
+  height: 10px;
+  width: 70px;
+  padding: 7px;
+  box-sizing:content-box;
+  top: 71%;
+  position: absolute;
+  left: 54.5%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.min2{
+  font-size: 130%;
+  color: white;
+  top: 70.7%;
+  position: absolute;
+  left: 39.8%;
+}
+
+.max2{
+  font-size: 130%;
+  color: white;
+  top: 70.7%;
+  position: absolute;
+  left: 51%;
+}
+
+
+
+.resources{
+  top: 3%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+} 
+
+.howthisworks a{
+  text-decoration: none;
+  top: 3%;
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+}
+
+.services{
+
+  top: 3%;
+  position: absolute;
+  left: 65%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+
+} 

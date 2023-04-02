@@ -1,0 +1,85 @@
+body {
+   background-image: url(../images/background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100vh;
+}
+
+.opc{
+   position: relative;
+   top: 10rem;
+   left: 50%;
+   font-family: 'Circular Std';
+   font-weight: Bolder;
+   color:rgba(182, 195, 199, 0.795);
+}
+
+.opc a{
+   text-decoration: none;
+   color: white;
+}
+
+.opc h4{
+   font-size: 3rem;
+}
+
+.opc a:hover{
+   color:rgba(49, 49, 94, 0.648);
+}
+
+@font-face {
+   font-family: 'Circular Std';
+   src: url(../fonts/CircularStd-Bold.woff) format('woff');
+   font-weight: Bolder;
+}
+
+/* header */
+.containerH {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   padding: 0 30px;
+}
+
+.logo {
+   position: relative;
+   top: 0;
+   left: 0;
+
+}
+
+.logo img {
+   height: 45px;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+   margin-left: 12.5rem;
+   margin-top: 1rem;
+   font-size: 20px;
+   font-weight: Liviano;
+}
+
+nav li {
+   display: flex;
+   flex-wrap: nowrap;
+   margin-right: 60px;
+   font-family: 'Circular Std';
+   font-weight: Liviano;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+}
+
+nav a:hover {
+   transform: scale(1.1, 1.1, 1.1, 1.1);
+   color: lightsalmon;
+}

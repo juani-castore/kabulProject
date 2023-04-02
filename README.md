@@ -8,6 +8,10 @@ miembros del grupo desarrollador:
 	- Luna Ferreiro (disenio y front end)
 	- Cata Aufiero (algoritmos y logistica)
 	- Juan Ignacio Castore (backend)
+	
+- demo es el proytecto de la api (viene con un front end auxiliar para interactuar con ella)
+
+- hackitba_front es la implementacion del front que se usaria en la version final de la aplicacion
 
 - instrucciones tiene los pasos para poder levantar la api en una computadora e interactuar con esta.
 

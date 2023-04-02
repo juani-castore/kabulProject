@@ -1,0 +1,182 @@
+/* header */
+.containerH {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   padding: 0 30px;
+}
+
+.logo {
+   position: relative;
+   top: 0;
+   left: 0;
+
+}
+
+.logo img {
+   height: 45px;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+   margin-left: 14.5rem;
+   margin-top: 1rem;
+}
+
+nav li {
+   display: flex;
+   flex-wrap: nowrap;
+   margin-right: 60px;
+   font-family: 'Circular Std';
+   font-weight: Liviano;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+}
+
+nav a:hover {
+   transform: scale(1.1, 1.1, 1.1, 1.1);
+   color: rgb(201, 66, 48);
+}
+
+/* main */
+body {
+   background-image: url(../images/employee-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100vh;
+} 
+
+.title {
+   font-family: 'Circular Std';
+   font-weight: Bolder;
+   color: white;
+   margin-top: 1.5rem;
+   margin-left: 6rem;
+   width: fit-content;
+}
+.title h1 {
+   font-size: 4.3rem;
+}
+
+@font-face {
+   font-family: 'Circular Std';
+   src: url(../fonts/CircularStd-Bold.woff) format('woff');
+   font-weight: Bolder;
+}
+
+@font-face {
+   font-family: 'Circular Std';
+   src: url(../fonts/CircularStd-Book.woff) format('woff');
+   font-weight: 700;
+}
+
+.form-group{
+   width: 20px;
+}
+
+.label0, .label1{
+   color: white;
+   font-family: 'Circular Std';
+   line-height: 3vw;
+   right: 20vh;
+   line-height: 10px;
+   font-size: medium;
+   position: absolute;
+   right: 52vh;
+}
+.label0{
+   top: 13rem;
+}
+.label1{
+   top: 24rem;
+}
+
+input{
+   width: 100vh;
+   height: 100px;
+   background-color: white;
+   border: none;
+}
+input::placeholder{
+   font-family: 'Circular Std';
+   font-weight: 700 ;
+   white-space: wrap;
+   color: rgb(182, 180, 180);
+}
+
+.textbox0, .textbox1{
+   border-radius:10px;
+   position: absolute;
+   right: 17vh;
+}
+.textbox0{
+   top:16rem;
+}
+.textbox1{
+   top: 27rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   white-space:pre-line;  
+   position:relative;
+   top:-7px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+   white-space:pre-line;  
+   position:relative;
+   top:-7px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   white-space:pre-line;  
+   position:relative;
+   top:-7px;
+}
+:-moz-placeholder { /* Firefox 18- */
+   white-space:pre-line;  
+   position:relative;
+   top:-7px;
+}
+
+.button{
+   position: absolute;
+   right: 17vh;
+   top: 93vh;
+}
+
+.item-d {
+   grid-area: 1 / col4-start / last-line / 6;
+}  
+
+.card{
+   background-color: rgba(255, 255, 255, 0.511);
+   color: white;
+   border: none;
+   border-radius: 15px;
+}
+
+.txt h3{
+   color: white;
+}
+
+.txt{
+   position: absolute;
+   left: 75vh;
+   top: 28vh;
+   font-family: 'Circular Std';
+   font-style: 700;
+}
+
+.addmore{
+   position: absolute;
+   top: 38vh;
+   right: 38vh;
+}

@@ -1,0 +1,345 @@
+
+  /* background foto */
+  body {
+    background-image: url("../images/bg-login.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* header */
+.containerH{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+.logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  
+}
+.logo img{
+  height: 55px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  position: absolute;
+  right: 20rem;
+  top: 2rem;
+}
+
+nav li {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 70px;
+  margin-left: 10px;
+  right: 100vw;
+  font-family: 'Circular Std';
+  font-weight: normal;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover{
+  transform: scale(1.1,1.1,1.1,1.1);
+  color: rgb(223, 91, 39);
+}
+
+  .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Establece la altura del contenedor al 100% del alto de la pantalla */
+  }
+
+
+  
+  main {
+    padding: 20px;
+    height: 40vw;
+    width: 70vw;
+    border-radius: 25px;
+    position: relative;
+  }
+  
+  p {
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #ffffff;
+    position: absolute;
+    right: 48vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+    width: 900px;
+    bottom: 28.7vw;
+  }
+
+
+
+
+  .bot1 {
+    display: inline-block;
+    background-color: #ffffff4b;
+    color: rgb(29, 28, 28);
+    border: 1.5px solid rgba(68, 67, 67, 0);
+    border-radius: 30px;
+    width: 30vw;
+    height: 13vw;
+    position: absolute;
+    top: 14.5vw;
+    right: 55vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+  
+  .botgoogle:active {
+    background-color: blue;
+    color: white;
+  }
+
+  p2 {
+    font-family: 'Circular std';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: relative;
+    text-align: left;
+    top: -2vw;
+    right: 0vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p3 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    position: absolute;
+    text-align: left;
+    top: 4.5vw;
+    left: 1.5vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p4 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    position: absolute;
+    text-align: left;
+    top: 8vw;
+    left: 1.5vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .bot2 {
+    display: inline-block;
+    background-color: #ffffff4b;
+    color: rgb(29, 28, 28);
+    border: 1.5px solid rgba(68, 67, 67, 0);
+    border-radius: 30px;
+    width: 30vw;
+    height: 13vw;
+    position: absolute;
+    top: 33vw;
+    right: 55vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+  
+  .botgoogle:active {
+    background-color: blue;
+    color: white;
+  }
+
+  p5 {
+    font-family: 'Circular std';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 2vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p6 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 6vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p7 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    top: 10vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .bot3 {
+    display: inline-block;
+    background-color: #ffffff4b;
+    color: rgb(29, 28, 28);
+    border: 1.5px solid rgba(68, 67, 67, 0);
+    border-radius: 30px;
+    width: 30vw;
+    height: 13vw;
+    position: absolute;
+    top: 14.5vw;
+    right: 17vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+  
+  .botgoogle:active {
+    background-color: blue;
+    color: white;
+  }
+
+  p8 {
+    font-family: 'Circular std';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 2vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p9 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 6vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p10 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    top: 10vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .bot4 {
+    display: inline-block;
+    background-color: #ffffff4b;
+    color: rgb(29, 28, 28);
+    border: 1.5px solid rgba(68, 67, 67, 0);
+    border-radius: 30px;
+    width: 30vw;
+    height: 13vw;
+    position: absolute;
+    top: 33vw;
+    right: 17vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+  
+  .botgoogle:active {
+    background-color: blue;
+    color: white;
+  }
+
+  p11 {
+    font-family: 'Circular std';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 2vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p12 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 6vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }
+
+  p13 {
+    font-family: 'Circular std';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    top: 10vw;
+    right: 15vw; /* Centra el objeto horizontalmente */
+    transform: translate(50%, -50%);
+  }

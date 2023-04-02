@@ -1,0 +1,241 @@
+body {
+    font-family: "Circular Std";
+    margin: 0;
+    padding: 0;
+  
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+    
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Bold.woff') format('woff2'),
+         url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: Bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+         url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight:lighter;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Light.woff2') format('woff2'),
+         url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /*Logo*/
+  .logo img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    }
+  
+  header {
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  
+  /*Host a new search*/
+  .titulo {
+    top: 6%;
+    position: absolute;
+    left: 17%;
+    transform: translateX(-50%);
+    font-family: "Circular Std";
+    font-weight: Bold;
+    font-size: 35px;
+    color: white;
+  }
+
+
+  .texto1{
+    top: 51%;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    font-family: "Circular Std";
+    font-weight: lighter;
+    font-size: 23px;
+    color: white;
+}
+
+.texto2{
+  top: 34%;
+  position: absolute;
+  left: 44.2%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-weight: lighter;
+  font-size: 23px;
+  color: white;
+}
+
+
+.textbox7 {
+  font-family: "Circular Std";
+  font-weight: bold;
+  width: 219px;
+  padding: 10px;
+  box-sizing:content-box;
+  top: 67%;
+  position: absolute;
+  left: 31%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  /* transition: border-bottom-color 0.3s ease; */
+}
+
+input[type="range"] {
+  top: 69.3%;
+  position: absolute;
+  left: 55%;
+  -webkit-appearance: none;
+  width: 30%;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: -6px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  -ms-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.mas{
+  top: 65%;
+  position: absolute;
+  left: 91%;
+}
+
+
+.skill1{
+  top: 80%;
+  position: absolute;
+  left: 26%;
+}
+
+
+.skill2{
+  top: 80%;
+  position: absolute;
+  left: 8%;
+}
+
+.continue{
+  top: 85%;
+  position: absolute;
+  left: 85%;
+}
+
+.uno{
+  font-size: 130%;
+  color: white;
+  top: 68.3%;
+  position: absolute;
+  left: 53%;
+}
+.cinco{
+  font-size: 130%;
+  color: white;
+  top: 68.3%;
+  position: absolute;
+  left: 86.5%;
+}
+
+.nombrebusq{
+  top: 45%;
+  position: absolute;
+  left: 30%;
+}
+
+
+.nombrebusq{
+  top: 45%;
+  position: absolute;
+  left: 30%;
+}
+
+
+.resources{
+  top: 3%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+} 
+
+.howthisworks a{
+  text-decoration: none;
+  top: 3%;
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+}
+
+.services{
+
+  top: 3%;
+  position: absolute;
+  left: 65%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+
+} 

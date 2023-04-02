@@ -1,0 +1,381 @@
+body {
+  font-family: "Circular Std";
+}
+
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Bold.woff') format('woff2'),
+       url('../fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: Bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+       url('../fonts/CircularStd-Book.woff') format('woff');
+  font-weight:lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Light.woff2') format('woff2'),
+       url('../fonts/CircularStd-Book.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Logo*/
+.logo img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  }
+
+header {
+  color: #ffffff;
+  padding: 20px;
+}
+
+
+/*How this works*/
+.titulo {
+  
+  font-family: "Circular Std";
+  font-weight: Bold;
+  font-size: 29px;
+  margin-top: -45px;
+  margin-bottom: 5srem;
+  color: white;
+  position:relative;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*Rectangulo*/
+.rectangle {
+  width: 1000px;
+  height: 450px;
+  background-color: white;
+  background-size: 10%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  overflow: auto; /* this will make the container scrollable */
+}
+.rectangle::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+
+/*Welcome/pick and choose*/
+.rectangle p{
+  font-family: "Circular Std";
+  color: black;
+  font-weight: lighter;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+/*Are you looking for*/
+.rectangle h3{
+  font-family: "Circular Std";
+  color: rgba(96, 0, 159, 0.92);
+  font-weight: lighter;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+	top: -40px;
+  font-size: 25px;
+}
+
+h3:hover {
+  color: rgb(21, 0, 104);
+}
+
+
+/*Flechas 1*/
+.flechas1 {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*new job*/
+.segundaizq {
+    top: 35%;
+    position: absolute;
+    left: 11%;
+    transform: translateX(-50%);
+}
+
+/*new employee*/
+.segundader {
+  top: 35%;
+  position: absolute;
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+
+/*flecha verticael izq 1*/
+
+.flechavertical1izq{
+  top: 40%;
+  position: absolute;
+  left: 10.3%;
+  transform: translateX(-50%);
+}
+
+
+/*flecha verticael der 1*/
+.flechavertical1der{
+  top: 40%;
+  position: absolute;
+  left: 89.7%;
+  transform: translateX(-50%);
+}
+
+/*complete your profile*/
+.terceraizq {
+  top: 58%;
+  position: absolute;
+  left: 17%;
+  transform: translateX(-50%);
+}
+
+/*host a new search*/
+.tercerader {
+  top: 58%;
+  position: absolute;
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+
+/*No sex...etc*/
+.terceraizqtexto {
+  font-weight: 700;
+  top: 58%;
+  position: absolute;
+  left: 18.8%;
+  transform: translateX(-50%);
+}
+
+/*Specify your salary range, job location and requirements, and rate them 1 through 5 in order of priority. */
+.terceradertexto {
+  font-weight: 700;
+  top: 58%;
+  position: absolute;
+  left: 78%;
+  transform: translateX(-50%);
+}
+
+/*flecha vertical izq 2*/
+.flechavertical2izq{
+  top: 72%;
+  position: absolute;
+  left: 10.3%;
+  transform: translateX(-50%);
+}
+
+/*flecha vertical der 2*/
+.flechavertical2der{
+  top: 72%;
+  position: absolute;
+  left: 89.7%;
+  transform: translateX(-50%);
+}
+
+
+/*Add your prefences*/
+.cuartaizq {
+  top: 89%;
+  position: absolute;
+  left: 17%;
+  transform: translateX(-50%);
+}
+
+/*meet your match*/
+.cuartader {
+  top: 89%;
+  position: absolute;
+  left: 86%;
+  transform: translateX(-50%);
+}
+
+/*No sex...etc*/
+.cuartaizqtexto {
+  font-weight: 700;
+  top: 89.5%;
+  position: absolute;
+  left: 21.5%;
+  transform: translateX(-50%);
+}
+
+/*Receive a list*/
+.cuartadertexto {
+  font-weight: 700;
+  top: 89.5%;
+  position: absolute;
+  left: 76%;
+  transform: translateX(-50%);
+}
+
+/*flecha vertical izq 2*/
+.flechavertical3izq{
+  top: 103%;
+  position: absolute;
+  left: 10.3%;
+  transform: translateX(-50%);
+}
+
+/*flecha vertical der 2*/
+.flechavertical3der{
+  top: 103%;
+  position: absolute;
+  left: 89.7%;
+  transform: translateX(-50%);
+}
+
+/*Wait for it*/
+.quintaizq {
+  top: 120%;
+  position: absolute;
+  left: 10.5%;
+  transform: translateX(-50%);
+}
+
+/*Wait for it*/
+.quintader {
+  top: 120%;
+  position: absolute;
+  left: 89%;
+  transform: translateX(-50%);
+}
+
+/*Thats it*/
+.quintaizqtexto {
+  font-weight: 700;
+  top: 120%;
+  position: absolute;
+  left: 21%;
+  transform: translateX(-50%);
+}
+
+/*Thats it*/
+.quintadertexto {
+  font-weight: 700;
+  top: 120%;
+  position: absolute;
+  left: 78%;
+  transform: translateX(-50%);
+}
+
+
+
+/*flecha match*/
+.flechamatch{
+  top: 135%;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+/*flecha match2*/
+.flechamatch2{
+  top: 135%;
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+
+.match{
+  font-weight: bold;
+  font-size: 100%;
+  color: blueviolet;
+  top: 175%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 5%;
+}
+
+.rectangle h6{
+
+  font-weight: bold;
+  font-size: 200%;
+  top: 145%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.resources{
+  top: 3%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+} 
+
+.howthisworks a{
+  text-decoration: none;
+  top: 3%;
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+}
+
+.services{
+
+  top: 3%;
+  position: absolute;
+  left: 65%;
+  transform: translateX(-50%);
+  font-family: "Circular Std";
+  font-size: 8.5px;
+  color: white;
+
+} 
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Optional: Add some content to the video element */
+#myVideo::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   }
